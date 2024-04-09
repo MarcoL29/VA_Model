@@ -57,9 +57,7 @@ if __name__ == '__main__':
     timestamp = now.strftime("%b-%d_%H-%M-%S")
     
     try:
-        preds_dir = 'Preds/' + timestamp + "_" + os.environ['COMPUTERNAME']
-    except:
-        preds_dir = 'Preds/' + timestamp + "_" + os.environ['HOST', 'default_value']
+        preds_dir = 'Preds/' + timestamp
 
     os.makedirs(preds_dir)
     run_parameters['path'] = preds_dir
