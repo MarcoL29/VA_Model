@@ -56,8 +56,7 @@ if __name__ == '__main__':
     now = datetime.now()
     timestamp = now.strftime("%b-%d_%H-%M-%S")
     
-    try:
-        preds_dir = 'Preds/' + timestamp
+    preds_dir = 'Preds/' + timestamp
 
     os.makedirs(preds_dir)
     run_parameters['path'] = preds_dir
