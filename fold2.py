@@ -14,9 +14,9 @@ from utils import create_prediction_tables
     
 def training_fold2(model, loss, timestamp, params, dataset, preds_dir, checkpoint):
     
-    output_dir2 = "Output Directory/" + timestamp + "/fold2"
-    model_dir = "model/" + timestamp + "/fold2"
-    log_dir = "runs/" + timestamp + "/fold2"
+    output_dir2 = "/kaggle/working/" + timestamp + "/fold2"
+    model_dir = "/kaggle/working/model/" + timestamp + "/fold2"
+    log_dir = "/kaggle/working/runs/" + timestamp + "/fold2"
     
     # Chooses the model
     if(model == 'distilbert'):
