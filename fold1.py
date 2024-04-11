@@ -12,10 +12,10 @@ from utils import create_prediction_tables
 
     
 def training_fold1(model, loss, timestamp, params, dataset, preds_dir, checkpoint):
-    output_dir1 = "Output Directory/" + timestamp + "/fold1"
+    output_dir1 = "/kaggle/working/" + timestamp + "/fold1"
     
-    model_dir = "model/" + timestamp + "/fold1"
-    log_dir = "runs/" + timestamp + "/fold1"
+    model_dir = "/kaggle/working/model/" + timestamp + "/fold1"
+    log_dir = "/kaggle/working/runs/" + timestamp + "/fold1"
     
     # Chooses the model
     if(model == 'distilbert'):
