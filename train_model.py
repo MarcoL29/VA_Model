@@ -79,9 +79,9 @@ if __name__ == '__main__':
         json.dump(run_parameters,f)
         
     # Dataset
-    data_dir = "/kaggle/working/data" 
-    filename_1 = os.path.join(data_dir, "full_dataset_fold1.csv")
-    filename_2 = os.path.join(data_dir, "full_dataset_fold2.csv")
+    data_dir = "/kaggle/input/ws-vad" 
+    filename_1 = os.path.join(data_dir, "FirstHalf.csv")
+    filename_2 = os.path.join(data_dir, "SecondHalf.csv")
 
     
     split_1 = MyDataset(filename=filename_1, checkpoint=checkpoint, maxlen=200)
