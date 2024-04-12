@@ -12,7 +12,6 @@ import torch
 
 # CUDA_LAUNCH_BLOCKING make cuda report the error where it actually occurs
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-os.environ["WANDB_MODE"] = "dryrun" 
 
 preds_dir = '/kaggle/working'
 run_parameters={}
