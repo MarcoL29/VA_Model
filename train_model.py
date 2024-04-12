@@ -12,6 +12,7 @@ from fold2 import training_fold2
 
 # CUDA_LAUNCH_BLOCKING make cuda report the error where it actually occurs
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
+os.environ["WANDB_MODE"] = "dryrun" 
 
 preds_dir = '/content/drive/MyDrive/preds'
 run_parameters={}
