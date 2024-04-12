@@ -92,8 +92,8 @@ if __name__ == '__main__':
     dataset = [[split_1, split_2], [split_2, split_1]]
 
     for k, v in params.items():
-    if isinstance(v, torch.Tensor):
-        params[k] = v.to(device)
+        if isinstance(v, torch.Tensor):
+            params[k] = v.to(device)
 
     # Train and Prediction
     training_fold1(model, loss, timestamp, params, dataset, preds_dir, checkpoint)
