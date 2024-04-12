@@ -13,7 +13,7 @@ from fold2 import training_fold2
 # CUDA_LAUNCH_BLOCKING make cuda report the error where it actually occurs
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
-preds_dir = '/kaggle/working/temp'
+preds_dir = '/content/drive/MyDrive/preds'
 run_parameters={}
 
 # TODO Completely separate 2 fold training
@@ -79,7 +79,7 @@ if __name__ == '__main__':
         json.dump(run_parameters,f)
         
     # Dataset
-    data_dir = "/kaggle/working" 
+    data_dir = "/content/drive/MyDrive/ws_va_dataset" 
     filename_1 = os.path.join(data_dir, "FirstHalf.csv")
     filename_2 = os.path.join(data_dir, "SecondHalf.csv")
 
