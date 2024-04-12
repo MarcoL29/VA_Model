@@ -49,8 +49,6 @@ if __name__ == '__main__':
         checkpoint = "xlm-roberta-base"
     elif(model == 'xlmroberta-large'):
         checkpoint = "xlm-roberta-large"
-
-    model.to(device)
         
     run_parameters['model'] = model
     run_parameters['loss_function'] = loss
@@ -90,10 +88,6 @@ if __name__ == '__main__':
     split_1 = MyDataset(filename=filename_1, checkpoint=checkpoint, maxlen=200)
     split_2 = MyDataset(filename=filename_2, checkpoint=checkpoint, maxlen=200)
     dataset = [[split_1, split_2], [split_2, split_1]]
-
-    for k, v in params.items():
-        if isinstance(v, torch.Tensor):
-            params[k] = v.to(device)
 
     # Train and Prediction
     training_fold1(model, loss, timestamp, params, dataset, preds_dir, checkpoint)
