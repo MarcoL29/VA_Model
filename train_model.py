@@ -79,7 +79,7 @@ if __name__ == '__main__':
         json.dump(run_parameters,f)
         
     # Dataset
-    data_dir = "/kaggle/input/ws-va-dataset" 
+    data_dir = "d/marco291201/ws-va-dataset" 
     filename_1 = os.path.join(data_dir, "FirstHalf.csv")
     filename_2 = os.path.join(data_dir, "SecondHalf.csv")
 
