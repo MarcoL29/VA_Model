@@ -14,7 +14,7 @@ import torch
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 os.environ["WANDB_MODE"] = "dryrun" 
 
-preds_dir = '/content/drive/MyDrive/preds'
+preds_dir = '/kaggle/working'
 run_parameters={}
 
 # TODO Completely separate 2 fold training
@@ -82,7 +82,7 @@ if __name__ == '__main__':
         json.dump(run_parameters,f)
         
     # Dataset
-    data_dir = "/content/drive/MyDrive/ws_va_dataset" 
+    data_dir = "/kaggle/working" 
     filename_1 = os.path.join(data_dir, "FirstHalf.csv")
     filename_2 = os.path.join(data_dir, "SecondHalf.csv")
 
